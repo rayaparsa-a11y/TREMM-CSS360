@@ -38,7 +38,7 @@ const getWelcomeMessageWithMeme = async (userId) => {
 
     TODO: Change this function to return different welcome message with a meme everytime a new user joins.
   */
-  const meme = await getMeme();
+  const meme = await getWelcomeMeme();
 
   return {
     content: `Welcome ${userMention(userId)},
@@ -47,7 +47,7 @@ const getWelcomeMessageWithMeme = async (userId) => {
   };
 };
 
-const getMeme = async () => {
+const getWelcomeMeme = async () => {
   /*
     this function returns a meme.
 
